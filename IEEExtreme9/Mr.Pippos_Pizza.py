@@ -16,18 +16,20 @@ def fact(n):
             x *= i+1
         return x
 
-
-for i in range(100):
-    x = input()
-    if (x != ""):
-        x = int(x)
-        n = 3
-        while (n > 0):
-            y = triangles(n)
-            if (x == y):
-                print(n)
-                break
-            else:
-                n+= 1
-    else:
-        break
+try:
+    for i in range(100):
+        x = input()
+        if (x != ""):
+            x = int(x)
+            n = 3
+            while (n > 0):
+                y = triangles(n)
+                if (x == y):
+                    print(n)
+                    break
+                else:
+                    n+= 1
+        else:
+            break
+except:
+    print("")
